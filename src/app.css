@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+      --text: #0c1222;
+      --background: #e4e9f7;
+      --primary: #a7befb;
+      --secondary: #f5c000;
+      --accent: #3158c4;
+    }
+    .dark {
+      --text: #dde3f3;
+      --background: #090f1d;
+      --primary: #041a59;
+      --secondary: #ffcb08;
+      --accent: #3a61ce;
+    }
+}
+  
+* {
+    @apply dark;
+}
+body {
+    @apply bg-background w-full;
+}
+
+.custom-box-shadow {
+  -webkit-box-shadow:
+    0px 0px 5px 1px rgba(255,255,255,1),
+    inset 0px 0px 5px 1px rgba(0,0,0,0.75);
+  -moz-box-shadow:
+    0px 0px 5px 1px rgba(255,255,255,1),
+    inset 0px 0px 5px 1px rgba(0,0,0,0.75);
+  box-shadow:
+    0px 0px 5px 1px rgba(255,255,255,1),
+    inset 0px 0px 5px 1px rgba(0,0,0,0.75);
+}
